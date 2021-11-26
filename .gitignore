@@ -54,3 +54,4 @@ dkms.conf
 # Visual Studio Code files
 .vscode
 workspace.code-workspace
+test/txt
