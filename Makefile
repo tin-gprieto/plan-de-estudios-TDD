@@ -22,7 +22,7 @@ $(TEST_EXE): test/pruebas.c $(LIB) $(TDA)
 	clear
 	$(CC) test/pruebas.c $(LIB) $(TDA) $(CFLAGS) $(WFLAGS) -o $(TEST_EXE)
 
-test: $(TEST_EXE)
+test: $(TEST_EXE) test/pruebas.c 
 	$(V) $(VFLAGS) ./$(TEST_EXE)
 
 gdb: $(TEST_EXE)
