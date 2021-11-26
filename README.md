@@ -9,11 +9,17 @@ El programa de Plan estudios consiste en un gestor para un plan de estudios univ
 
 Para la utilización del programa se cuenta con un menú con opciones que determinará que tipo de función se le dará al mismo. Entre estas funciones se encuentran:
 
-- Buscar una materia según su código (mostrando estado y calificación si correspondiera)
+- Crear un plan de estudios 
 
-- Listar materias según estados
+- Agregar una materia al plan de estudios
+
+- Eliminar una materia del plan de estudios
+
+- Buscar una materia (según su código, mostrando estado y calificación si correspondiera)
 
 - Modificar la calificación de una materia (asignar calificación y optar entre estado aprobada o cursada)
+
+- Listar materias según estados
 
 ## Estados
 
@@ -31,7 +37,7 @@ Para categorizar las materias y poder tener una disposición útil para aquel us
 
 ## Formato de archivo
 
-Tanto para buscar como para modificar materias, se deberá hacerlo a partir del código de la misma. Para ello hace falta hablar del formato en el que se debe disponer el archivo .txt que contenga el listado de todas las materias. Para ello, se debe utilizar un archivo de texto que contenga a todas las materias distanciadas por un "enter" y con el siguente formato: 
+Tanto para buscar como para modificar materias, se deberá hacerlo a partir del código de la misma. Para ello hace falta hablar del formato en el que se debe disponer el archivo .csv que contenga el listado de todas las materias. Para ello, se debe utilizar un archivo de texto que contenga a todas las materias distanciadas por un "enter" y con el siguente formato: 
 
 
     [código];[nombre];[estado];[nota];[correlativas]
@@ -56,6 +62,5 @@ Las materias se contarán como válidas en el caso de que se cumplan los siguent
 
 ### Ideas a implementar
 
-- Agregar/crear el archivo desde el mismo programa
 - Gestión de materias optativas
 - Simultaneidades con otra carrera (plan de estudios) 
